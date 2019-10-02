@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Labor1</string>
-    <string name="edit_message">Enter message</string>
+    <string name="first_name">First name</string>
     <string name="button_send">Send</string>
+    <string name="last_name">Last name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="register">Register</string>
+    <string name="profile">Profile</string>
 </resources>
