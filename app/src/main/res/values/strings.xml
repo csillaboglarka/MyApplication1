@@ -6,4 +6,7 @@
     <string name="sign_up">Sign up</string>
     <string name="register">Register</string>
     <string name="profile">Profile</string>
+    <string name="department">Department</string>
+    <string name="num_sign">Number of calls from Profile page </string>
+    <string name="num_register">Number of calls from Register</string>
 </resources>

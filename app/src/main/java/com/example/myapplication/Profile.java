@@ -20,6 +20,8 @@ public class Profile extends AppCompatActivity {
         String first_name = intent.getStringExtra("FIRST_NAME");
         TextView firstName = findViewById(R.id.firstName);
         firstName.setText(first_name);
+
+
     }
 
 
