@@ -17,6 +17,9 @@ public class Profile extends AppCompatActivity {
         String last_name = intent.getStringExtra("LAST_NAME");
         TextView lastName = findViewById(R.id.lastName);
         lastName.setText(last_name);
+        String first_name = intent.getStringExtra("FIRST_NAME");
+        TextView firstName = findViewById(R.id.firstName);
+        firstName.setText(first_name);
     }
 
 

@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     public final String LAST_NAME = "com.example.myfirstapp.MESSAGE";
+    public final String FIRST_NAME = "com.example.myfirstapp.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         EditText lastNname = (EditText) findViewById(R.id.lastName);
         String last_name = lastNname.getText().toString();
         profintent.putExtra("LAST_NAME", last_name);
+        EditText firstNname = (EditText) findViewById(R.id.firstName);
+        String first_name = firstNname.getText().toString();
+        profintent.putExtra("FIRST_NAME", first_name);
         startActivity(profintent);
     }
 

@@ -10,62 +10,59 @@
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/firstName"
         tools:layout_editor_absoluteX="0dp">
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
-        android:id="@+id/firstName"
-        android:layout_width="327dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:ems="10"
-        android:hint="@string/first_name"
+        android:hint="@string/last_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/lastName"
-        android:layout_width="324dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="@string/last_name"
+        android:hint="@string/first_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="goProfile"
+        android:text="@string/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/register"
         app:layout_constraintTop_toBottomOf="@+id/firstName" />
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="56dp"
         android:text="@string/register"
-        app:layout_constraintTop_toTopOf="@+id/lastName"
-        tools:layout_editor_absoluteX="47dp" />
-
-    <Button
-        android:id="@+id/profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="233dp"
-        android:layout_marginLeft="233dp"
-        android:layout_marginTop="77dp"
-        android:onClick="goProfile"
-        android:text="@string/sign_up"
-        app:layout_constraintStart_toStartOf="@+id/sign_in"
-        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+        app:layout_constraintEnd_toStartOf="@id/signUp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
