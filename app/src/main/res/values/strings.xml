@@ -9,4 +9,6 @@
     <string name="department">Department</string>
     <string name="num_sign">Number of calls from Profile page </string>
     <string name="num_register">Number of calls from Register</string>
+    <string name="back">BACK</string>
+    <string name="emptyString">-</string>
 </resources>
